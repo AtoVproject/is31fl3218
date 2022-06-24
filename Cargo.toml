@@ -1,14 +1,14 @@
 [package]
-name = "embedded-driver-template"
-description = "A rust-embedded driver template"
+name = "is31fl3218"
+description = "A rust-embedded driver for the Lumissil Microsystems IS31FL3218 LED driver"
 categories = ["embedded", "hardware-support", "no-std"]
-documentation = "https://docs.rs/embedded-driver-template"
+documentation = "https://docs.rs/is31fl3218"
 authors = ["Chris Maniewski"]
 version = "0.1.0"
 edition = "2021"
 readme = "README.md"
 license = "MIT OR Apache-2.0"
-repository = "https://git.sr.ht/~chmanie/embedded-driver-template"
+repository = "https://git.sr.ht/~chmanie/is31fl3218"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

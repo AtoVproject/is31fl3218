@@ -1,15 +1,17 @@
-[![crates.io](https://img.shields.io/crates/d/embedded-driver.svg)](https://crates.io/crates/embedded-driver)
-[![crates.io](https://img.shields.io/crates/v/embedded-driver.svg)](https://crates.io/crates/embedded-driver)
-[![Documentation](https://docs.rs/embedded-driver/badge.svg)](https://docs.rs/embedded-driver)
+[![crates.io](https://img.shields.io/crates/d/is31fl3218.svg)](https://crates.io/crates/is31fl3218)
+[![crates.io](https://img.shields.io/crates/v/is31fl3218.svg)](https://crates.io/crates/is31fl3218)
+[![Documentation](https://docs.rs/is31fl3218/badge.svg)](https://docs.rs/is31fl3218)
 ![Minimum Supported Rust Version](https://img.shields.io/badge/rustc-1.46+-blue.svg)
 
-# `embedded-driver-template`
 
->  A rust-embedded driver template to get you started
+# `is31fl3218`
+
+
+>  A rust-embedded driver for the Lumissil Microsystems IS31FL3218 LED driver
 
 ## [API reference]
 
-[API reference]: https://docs.rs/embedded-driver
+[API reference]: https://docs.rs/is31fl3218
 
 ## Minimum Supported Rust Version (MSRV)
 
