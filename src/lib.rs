@@ -117,7 +117,7 @@ where
         Ok(())
     }
 
-    /// Set all channels to specific brightness values
+    /// Set all channels to specific brightness values and enables all channels
     pub fn set_all(&mut self, values: &[u8; 18]) -> Result<(), Error<S>> {
         self.cmd_buf[0] = 0x1;
         self.cmd_buf[0x1..=0x12].copy_from_slice(values);
