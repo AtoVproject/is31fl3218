@@ -24,20 +24,16 @@ pub struct Is31Fl3218<I2C> {
     cmd_buf: [u8; 23],
 }
 
-impl<'a, I2C, S> Is31Fl3218<I2C>
+impl<I2C, S> Is31Fl3218<I2C>
 where
     I2C: Write<u8, Error = S> + Read<u8, Error = S> + WriteRead<u8, Error = S>,
 {
-    /// Create a new Is31Fl3218 instance. Will enable the device immediately
-    pub fn new(i2c: I2C) -> Result<Self, Error<S>> {
-        let mut is31fl3218 = Self {
+    /// Create a new Is31Fl3218 instance
+    pub fn new(i2c: I2C) -> Self {
+        Self {
             i2c,
             cmd_buf: [0; 23],
-        };
-
-        is31fl3218.enable_device()?;
-
-        Ok(is31fl3218)
+        }
     }
 
     fn write_raw(&mut self, len: usize) -> Result<(), Error<S>> {
@@ -132,7 +128,6 @@ where
         self.write(0x17, &[0])?;
         Ok(())
     }
-
 }
 
 #[cfg(test)]
@@ -163,7 +158,8 @@ mod tests {
                 ],
             ),
         ]);
-        let mut led_driver = Is31Fl3218::new(i2c).unwrap();
+        let mut led_driver = Is31Fl3218::new(i2c);
+        led_driver.enable_device().unwrap();
         led_driver.enable_channel(15).unwrap();
         led_driver.set_all(&[255; 18]).unwrap();
     }
