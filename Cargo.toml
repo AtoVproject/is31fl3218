@@ -13,8 +13,5 @@ repository = "https://git.sr.ht/~chmanie/is31fl3218"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-embedded-hal-async = "1.0.0"
-embedded-hal-mock = { version = "0.10", features = ["eh1", "embedded-hal-async"] }
+embedded-hal-async = "1.0"
 
-[dev-dependencies]
-embedded-hal-mock = "0.10"
