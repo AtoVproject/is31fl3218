@@ -1,11 +1,9 @@
 [![crates.io](https://img.shields.io/crates/d/is31fl3218.svg)](https://crates.io/crates/is31fl3218)
 [![crates.io](https://img.shields.io/crates/v/is31fl3218.svg)](https://crates.io/crates/is31fl3218)
 [![Documentation](https://docs.rs/is31fl3218/badge.svg)](https://docs.rs/is31fl3218)
-![Minimum Supported Rust Version](https://img.shields.io/badge/rustc-1.46+-blue.svg)
-
+![Minimum Supported Rust Version](https://img.shields.io/badge/rustc-1.76+-blue.svg)
 
 # `is31fl3218`
-
 
 >  A rust-embedded driver for the Lumissil Microsystems IS31FL3218 LED driver
 
@@ -15,7 +13,7 @@
 
 ## Minimum Supported Rust Version (MSRV)
 
-This crate is guaranteed to compile on stable Rust 1.46 and up. It *might* compile with older versions but that may change in any new patch release.
+This crate is guaranteed to compile on stable Rust 1.76 and up. It *might* compile with older versions but that may change in any new patch release.
 
 ## License
 

@@ -34,4 +34,4 @@ The enforcement policies listed above apply to all official embedded WG venues; 
 
 *Adapted from the [Node.js Policy on Trolling](http://blog.izs.me/post/30036893703/policy-on-trolling) as well as the [Contributor Covenant v1.3.0](https://www.contributor-covenant.org/version/1/3/0/).*
 
-[chris]: https://github.com/chmanie
+[chris]: mailto:chris@atov.de
